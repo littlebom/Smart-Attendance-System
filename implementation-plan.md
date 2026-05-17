@@ -8,8 +8,8 @@
 
 | Phase | ชื่อ | สถานะการพัฒนา |
 |-------|------|--------|
-| 0 | UI/UX Design & GUI Prototyping | ⬜ |
-| 1 | Setup & Foundation | ⬜ |
+| 0 | Setup & Foundation | ⬜ |
+| 1 | UI/UX Design & GUI Prototyping | ⬜ |
 | 2 | Student Registration & Face Enrollment | ⬜ |
 | 3 | Face Check-in & AI Tuning | ⬜ |
 | 4 | Instructor Dashboard & Live Feed | ⬜ |
@@ -18,13 +18,7 @@
 
 ---
 
-## Phase 0: UI/UX Design & GUI Prototyping
-**เป้าหมาย:** ออกแบบหน้าตาแอปพลิเคชัน (GUI) และพัฒนา UI ส่วนหน้าด้วย Dummy Data ให้เห็นภาพรวมทั้งหมดก่อนเริ่มเขียนลอจิกและระบบหลังบ้าน
--[ ] ออกแบบภาพจำลอง (Mockup) สำหรับหน้า Dashboard และหน้า Face Check-in
--[ ] สร้างหน้าตา GUI ฝั่ง Frontend ให้สวยงามตามดีไซน์ (ใช้ Tailwind Syntax Template: Light Mode)
--[ ] เตรียม Layout และโครงสร้าง UI ให้พร้อมสำหรับการเชื่อมต่อข้อมูลจริง
-
-## Phase 1: Setup & Foundation
+## Phase 0: Setup & Foundation
 **เป้าหมาย:** สร้างโครงสร้างโปรเจกต์ Next.js, ติดตั้งไลบรารี, สร้างฐานข้อมูล JSON
 -[ ] สั่ง `npx create-next-app@latest`
 -[ ] ติดตั้ง Dependencies: `face-api.js`, `recharts`, `lucide-react`, `date-fns`, `nanoid`
@@ -32,6 +26,12 @@
 -[ ] สร้างโฟลเดอร์ `data/` และไฟล์เปล่า `students.json`, `attendance.json`
 -[ ] เขียน `lib/db.ts` สำหรับการอ่าน/เขียน JSON File (มี Lock ป้องกันการเขียนทับ)
 -[ ] สร้าง Layout หลัก (`app/layout.tsx`) พร้อมแถบ Navbar กว้าง `max-w-5xl` และใส่ไอคอนจาก `lucide-react`
+
+## Phase 1: UI/UX Design & GUI Prototyping
+**เป้าหมาย:** ออกแบบหน้าตาแอปพลิเคชัน (GUI) และพัฒนา UI ส่วนหน้าด้วย Dummy Data ให้เห็นภาพรวมทั้งหมดก่อนเริ่มเขียนลอจิกและระบบหลังบ้าน
+-[ ] ออกแบบภาพจำลอง (Mockup) สำหรับหน้า Dashboard และหน้า Face Check-in
+-[ ] สร้างหน้าตา GUI ฝั่ง Frontend ให้สวยงามตามดีไซน์ (ใช้ Tailwind Syntax Template: Light Mode)
+-[ ] เตรียม Layout และโครงสร้าง UI ให้พร้อมสำหรับการเชื่อมต่อข้อมูลจริง
 
 ## Phase 2: Student Registration & Face Enrollment
 **เป้าหมาย:** ระบบลงทะเบียนนักศึกษาใหม่ พร้อมถ่ายภาพสกัด Face Descriptor Vector
